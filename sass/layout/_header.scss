@@ -1,0 +1,165 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+body {
+    overflow-x: hidden;
+}
+
+
+header {
+    
+    background-image: url(/images/Headerback.png);
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    h3 {
+        transform: rotate(-15deg);
+        font-size: 50px;
+        max-height: 300px;
+        margin-left: 600px;
+
+        @include breakpoint(1000px, 'max'){
+            font-size: 25px;
+            max-height: 200px;
+            margin-left: 450px;
+        }
+
+        @include breakpoint(600px, 'max'){
+            font-size: 25px;
+            max-height: 100px;
+            margin-left: 300px;
+        }
+    }
+
+    .linear{
+        background: linear-gradient(110deg, rgba(#60A0D8, 0.6), rgba(#B2D234, 0.6));
+        height: 100%;
+        width: 100vw;
+        position: relative;
+        z-index: 1;
+    } 
+      
+    .nav_title {
+        margin-top: 200px;
+        display: flex;  
+        justify-content: center;
+        font-size: 80px;
+
+        @include breakpoint(1000px, 'max'){
+            margin-top: 150px;
+            font-size: 60px;
+        }
+
+        @include breakpoint(600px, 'max'){
+            margin-top: 100px;
+            font-size: 35px;
+        }
+
+        h1{
+            font-family: $PoppinsF;
+            font-weight: lighter;
+        }
+    }
+
+    nav{
+        
+        display: flex;
+        align-items: center;
+        height: auto;
+        padding-inline: 27px;
+       
+        button{
+            color: $green;
+            padding: 5px 10px 5px 10px;
+            border-radius: 5%;
+            border: none;
+        }
+
+        ul{
+            display: flex;
+            align-items: center;    
+        }
+
+        .nav_logo img {
+
+            margin-top: 20px;
+            margin-left: 20px;
+            object-fit: cover;
+            width: 70%;
+            min-width: 200px;
+            height: auto;
+
+            @include breakpoint(1200px, 'max'){
+                min-width: 150px;
+            }
+            
+
+            @include breakpoint(1000, 'max'){
+                min-width: 110px;
+            }
+            
+        }
+
+
+        .navbar_droit {
+        
+            margin-left: 550px;
+
+            @include breakpoint(1300px, 'max'){
+                margin-left: 350px;
+            }
+
+            @include breakpoint(900px, 'max'){
+                margin-left: 250px;
+            }
+    
+            @include breakpoint(600, 'max'){
+                margin-left: 150px;
+            }
+    
+    
+            li {
+                padding: 0;
+                color: white;
+                margin-left: 50px;
+                font-weight: 300;
+
+                .navbar_button {
+                    color: #B2D234;
+                    padding: 20px;
+                    background-color: white;
+                    
+                }
+
+                &:hover {
+                    border-bottom: solid 3px white;
+
+                }
+            }
+        }
+    }
+    
+    .nav_link {
+        
+
+        img{
+            margin-left: 20px;
+            position: relative;
+            width: 30px;
+            left: 1320px;
+            top: 100px;
+        }
+    }
+
+}
+
+
+
+
+
+
+

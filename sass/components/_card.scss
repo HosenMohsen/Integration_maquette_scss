@@ -1,0 +1,113 @@
+.salade{
+
+    display: flex;
+    background-image: url(/images/61842.png);
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    
+
+    &_content{
+
+        max-width: 600px;
+        margin-left: 60px;
+
+        h3{
+            color: $green;
+            font-size: $poppins2;
+            margin-bottom: 20px;
+        }
+
+        p{
+            color: $gray;
+            font-size: $poppins;
+            padding-inline: 24px;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+
+        a {
+            position: relative;
+            top: 20px;
+            margin-left: 25px;
+            text-decoration: none;
+            padding: 14px 60px 14px 60px;
+            background-color: $green;
+            border-radius: 5%;
+            box-shadow: 6px 3px 3px $gray;
+        }
+
+        &_text{
+
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            text-align: justify;
+        }
+    }
+
+    &_img {
+        height: 100vh;
+        width: auto;
+        object-fit: cover;
+        overflow: hidden;
+
+    }
+}
+
+
+.preparation{
+    height: 100vh;
+    background-image: url(/images/ismael-trevino-NDyuR4Huig8-unsplash.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    &_card {
+
+        position: relative;
+        top: 100px;
+        left: 800px;
+        height: 500px;
+        max-width: 500px;
+        background-color: $green    ;
+        
+
+
+        
+    
+        a {
+            position: relative;
+            top: 20px;
+            margin: 130px;
+            text-decoration: none;
+            padding: 14px 60px 14px 60px;
+            background-color: white;
+            border-radius: 5%;
+            color: $green;
+            box-shadow: 6px 3px 3px $gray;
+        }
+
+    }
+    
+    &_text {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        h3{
+            font-size: $poppins2;
+        }
+    
+        p{
+        
+            font-size: $poppins;
+            padding-inline: 24px;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+    }
+    
+}
+    
