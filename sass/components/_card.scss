@@ -112,13 +112,81 @@
 }
     
 
+.selection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: url(/images/louis-hansel-MlPD-AzZYMg-unsplash.png);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+
+    h3{
+        color: white;
+    }
+
+    &_vert{
+        text-align: center;
+        background-color: $green;
+        height: 50vh;
+        width: 100vh;
+        opacity: 0.7;
+        margin-left: 5%;
+        margin-top: 20%;
+
+        h3 {
+            font-size: 52px;    
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
+
+        &_content{
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+            
+        }
+
+
+    }
+
+    &_bleu {
+        text-align: center;
+        background-color: #60A0D8;
+        opacity: 0.9;
+        height: 50vh;
+        width: 90vh;
+        margin-left: 5%;
+        margin-top: 20%;
+
+        h3 {
+            font-size: 52px;    
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
+
+        &_content{
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+            
+        }
+    }
+}
+
+
+
+
+
+
+
+
 .formulaire {
     height: 100vh;
     width: 100vw;
     background-image: url(/images/61842.png);
     background-size: cover;
 
-    .formulaire_container{
+    &_container{
         display: grid;
         grid-template-columns: 1fr 1fr;
 
@@ -128,7 +196,7 @@
             margin-top: 15%;
         }
 
-        .formulaire_image img {
+        & img {
             margin-left: 20%;
             max-width: 500px;
             height: auto;

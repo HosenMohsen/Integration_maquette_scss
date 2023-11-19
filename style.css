@@ -265,69 +265,119 @@ footer {
   margin-bottom: 20px;
 }
 
+.selection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-image: url(/images/louis-hansel-MlPD-AzZYMg-unsplash.png);
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+}
+.selection h3 {
+  color: white;
+}
+.selection_vert {
+  text-align: center;
+  background-color: #B2D234;
+  height: 50vh;
+  width: 100vh;
+  opacity: 0.7;
+  margin-left: 5%;
+  margin-top: 20%;
+}
+.selection_vert h3 {
+  font-size: 52px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.selection_vert_content {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+.selection_bleu {
+  text-align: center;
+  background-color: #60A0D8;
+  opacity: 0.9;
+  height: 50vh;
+  width: 90vh;
+  margin-left: 5%;
+  margin-top: 20%;
+}
+.selection_bleu h3 {
+  font-size: 52px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.selection_bleu_content {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
 .formulaire {
   height: 100vh;
   width: 100vw;
   background-image: url(/images/61842.png);
   background-size: cover;
 }
-.formulaire .formulaire_container {
+.formulaire_container {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.formulaire .formulaire_container .formulaire_image {
+.formulaire_container .formulaire_image {
   display: flex;
   align-items: center;
   margin-top: 15%;
 }
-.formulaire .formulaire_container .formulaire_image img {
+.formulaire_container img {
   margin-left: 20%;
   max-width: 500px;
   height: auto;
   object-fit: cover;
 }
-.formulaire .formulaire_container .formulaire_content {
+.formulaire_container .formulaire_content {
   margin-left: 3%;
   margin-top: 5%;
 }
-.formulaire .formulaire_container .formulaire_content h2 {
+.formulaire_container .formulaire_content h2 {
   font-size: 52px;
   color: #B2D234;
 }
-.formulaire .formulaire_container .formulaire_content p {
+.formulaire_container .formulaire_content p {
   color: black;
   font-size: 18px;
 }
-.formulaire .formulaire_container .formulaire_content form {
+.formulaire_container .formulaire_content form {
   display: grid;
   margin-top: 20px;
   grid-template-columns: 1fr;
   gap: 10px;
   max-width: 400px;
 }
-.formulaire .formulaire_container .formulaire_content form .form_name {
+.formulaire_container .formulaire_content form .form_name {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.formulaire .formulaire_container .formulaire_content form input {
+.formulaire_container .formulaire_content form input {
   margin: 5px;
   padding: 5px;
 }
-.formulaire .formulaire_container .formulaire_content form label {
+.formulaire_container .formulaire_content form label {
   color: #B2D234;
   font-size: 23px;
   font-style: italic;
 }
-.formulaire .formulaire_container .formulaire_content textarea {
+.formulaire_container .formulaire_content textarea {
   width: 510px;
   height: 150px;
 }
-.formulaire .formulaire_container .formulaire_content .formulaire_button {
+.formulaire_container .formulaire_content .formulaire_button {
   display: flex;
   justify-content: center;
 }
-.formulaire .formulaire_container .formulaire_content button {
+.formulaire_container .formulaire_content button {
   padding: 14px 60px 14px 60px;
   color: white;
   background-color: #B2D234;
