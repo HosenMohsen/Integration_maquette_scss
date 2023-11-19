@@ -116,6 +116,10 @@ header {
             @include breakpoint(900px, 'max'){
                 margin-left: 250px;
             }
+
+            @include breakpoint(900px, 'max'){
+                margin-left: 250px;
+            }
     
             @include breakpoint(600, 'max'){
                 margin-left: 150px;
